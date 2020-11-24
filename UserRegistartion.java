@@ -10,9 +10,14 @@ public class UserRegistartion {
 		System.out.println("Enter First Name:");
 		String fName = sc.nextLine();
 		u.firstName(fName);
+		
 		System.out.println("Last Name");
 		String lName = sc.nextLine();
 		u.lastName(lName);
+		
+		System.out.println("Enter email id");
+		String email = sc.nextLine();
+		u.Email(email);
 		sc.close();
 	}
 	
@@ -43,6 +48,21 @@ public class UserRegistartion {
 			System.out.println("Last Name is invalid");
 		}
 		
+	}
+	
+	/*UC3*/
+	public void Email(String str)
+	{
+		String regexforEmail = "^([a-zA-Z]{3,}([.|_|+|-]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$";
+		if(Pattern.matches(regexforEmail, str))
+		{
+			System.out.println("Last Name is valid");
+		}
+		else
+		{
+			System.out.println("Last Name is invalid");
+		}
+
 	}
 	
 	
