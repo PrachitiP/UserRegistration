@@ -56,11 +56,11 @@ public class UserRegistartion {
 		String regexforEmail = "^([a-zA-Z]{3,}([.|_|+|-]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$";
 		if(Pattern.matches(regexforEmail, str))
 		{
-			System.out.println("Last Name is valid");
+			System.out.println("Email is valid");
 		}
 		else
 		{
-			System.out.println("Last Name is invalid");
+			System.out.println("Email is invalid");
 		}
 
 	}
