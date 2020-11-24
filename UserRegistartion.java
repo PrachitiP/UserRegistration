@@ -13,6 +13,7 @@ public class UserRegistartion {
 		sc.close();
 	}
 	
+	/*UC1*/
 	public void firstName(String str)
 	{
 		String regexforFirstName = "^[A-Z]{1}[a-zA-Z]{2,}$";
